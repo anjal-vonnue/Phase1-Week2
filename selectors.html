@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Selector Challenge Sheet</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="selectors, box model, colours and typography"
+    />
+    <link rel="stylesheet" href="selectors.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#list">List</a>
+      <a href="#form">Form</a>
+      <a href="#article">Article</a>
+      <a href="preced">Preceds</a>
+      <a href="fruits">Fruits</a>
+      <a href="contact">Contact</a>
+    </nav>
+    <main>
+      <div>
+        <h1 id="list">List</h1>
+        <ul>
+          <li>Anjal</li>
+          <li>Yasin</li>
+          <li>Christo</li>
+          <li>Gauresh</li>
+          <li>Akshay</li>
+          <li>Delwin</li>
+          <li>Sona</li>
+        </ul>
+      </div>
+      <div>
+        <h1 id="form">Form</h1>
+        <form class="card featured">
+          <p>
+            <label for="name">Name*: </label>
+            <input id="name" name="name" type="text" required />
+          </p>
+          <p>
+            <label for="email">Email*: </label>
+            <input id="email" name="email" type="email" required />
+          </p>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div>
+        <h1 id="article">Article</h1>
+        <article>
+          <p>This is a first child</p>
+          <p>This is second child</p>
+        </article>
+      </div>
+      <div id="preced">
+        <h1>P Element After H2</h1>
+        <h2>Sample heading h2</h2>
+        <p>I am the first p element preceding h2</p>
+        <p>I am the second p element preceding h2</p>
+      </div>
+
+      <div>
+        <h1 id="fruits">Fruits</h1>
+        <ol>
+          <li>Mango</li>
+          <li>Orange</li>
+          <li>JackFruit</li>
+          <li>Banana</li>
+          <li>Grapes</li>
+          <li>Cucumber</li>
+          <li>Apple</li>
+          <li>Pumpkin</li>
+          <li>Carrot</li>
+          <li><a href="https://www.tomato.com">Tomato</a></li>
+          <li>Chillie</li>
+        </ol>
+      </div>
+
+      <div>
+        <h1 id="contact">Contact</h1>
+        <p>hello this is my <a href="https://www.anjalkbiju.com">webstie</a></p>
+      </div>
+    </main>
+  </body>
+</html>
