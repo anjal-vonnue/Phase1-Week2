@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Box Model Deep Dive</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="box model with eight div elements" />
+    <link rel="stylesheet" href="boxmodel.css" />
+  </head>
+  <body>
+    <main>
+      <h1>BOX SIZING:</h1>
+      <div id="div1">
+        <p>content box</p>
+      </div>
+      <div id="div2"><p>border box</p></div>
+      <h1>Margin Collapsing</h1>
+      <div id="div3">
+        <p>the margin value between div3 and div4 is 50px.</p>
+      </div>
+      <div id="div4">
+        <p>
+          the actual sum is 50+30 which is 80, the large value 50 is collapsed.
+        </p>
+      </div>
+      <h1>Negative Margin</h1>
+      <div id="div5"></div>
+      <div id="div6"></div>
+      <h1>Different types.</h1>
+      <div id="div7"></div>
+      <div id="div8"></div>
+    </main>
+  </body>
+</html>
