@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Checkout Form</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="checkout form with three fieldsets" />
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <h1>Checkout Form</h1>
+        <fieldset><legend>Fields marked * are required</legend></fieldset>
+
+        <fieldset>
+          <legend>Delivery Address</legend>
+          <div class="container">
+            <div class="names">
+              <p class="names-p">
+                <label for="f-name">First Name*: </label>
+                <input id="f-name" name="f-name" type="text" required />
+                <span class="error-message">Please enter a valid input.</span>
+              </p>
+              <p>
+                <label for="l-name">Last Name*: </label>
+                <input id="l-name" name="l-name" type="text" required />
+                <span class="error-message">Please enter a valid input.</span>
+              </p>
+            </div>
+
+            <p>
+              <label for="addr-one">Address Line 1*: </label>
+              <input id="addr-one" name="addr-one" type="text" required />
+              <span class="error-message">Please enter a valid input.</span>
+            </p>
+            <p>
+              <label for="addr-two">Address Line 2*: </label>
+              <input id="addr-two" name="addr-two" type="text" required />
+              <span class="error-message">Please enter a valid input.</span>
+            </p>
+
+            <p>
+              <label for="city">City*: </label>
+              <input id="city" name="city" type="text" required />
+              <span class="error-message">Please enter a valid input.</span>
+            </p>
+            <p>
+              <label for="postcode">Postcode*: </label>
+              <input
+                id="postcode"
+                name="postcode"
+                type="text"
+                pattern="[0-9]+"
+                required
+              />
+              <span class="error-message">Please enter a valid input.</span>
+            </p>
+
+            <p>
+              <label for="country">Country*: </label>
+              <select id="country" name="country" required>
+                <option value="">Select your Country</option>
+                <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Egypt">Egypt</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Japan">Japan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Norway">Norway</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="United Kindom">United Kindom</option>
+              </select>
+              <span class="error-message">Please enter a valid input.</span>
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Details</legend>
+          <p>
+            <label for="card">Card Number*: </label>
+            <input
+              id="card"
+              name="card"
+              type="text"
+              maxlength="16"
+              pattern="[0-9]+"
+              required
+            />
+            <span class="error-message">Please enter a valid input.</span>
+          </p>
+          <p>
+            <label for="expiry">Expiry Month*: </label>
+            <input id="expiry" name="expiry" type="month" required />
+            <span class="error-message">Please enter a valid input.</span>
+          </p>
+          <p>
+            <label for="cvv">CVV*: </label>
+            <input
+              id="cvv"
+              name="cvv"
+              type="password"
+              maxlength="4"
+              required
+              pattern="[0-9]+"
+              aria-describedby="cvv-desc"
+            />
+            <span class="error-message">Please enter a valid input.</span>
+          </p>
+          <p id="cvv-desc" role="tooltip">
+            3 or 4 digits on the back of your card
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Notes</legend>
+          <p>
+            <label for="notes">Optional: </label>
+            <br />
+            <textarea id="notes" name="notes" maxlength="500"></textarea>
+            <span class="error-message">Please enter a valid input.</span>
+          </p>
+        </fieldset>
+
+        <br />
+        <div class="button-container">
+          <button type="submit" class="submit">Submit Form</button>
+          <button type="reset" class="reset">Reset Form</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
