@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+ display: flex;
+ gap: 2px;
+ flex-direction: row;
+ padding: 10px;
+ border: 1px solid black;
+}
+
+.box{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+.grow-1{
+    flex-grow: 0;
+}
+.grow-2 {
+    flex-grow: 1;
+}
+.grow-3 {
+    flex-grow: 2;
+}
+.grow-4 {
+    flex-grow: 1;
+}
+.grow-5 {
+    flex-grow: 0;
+}
+
+.shrink-width{
+    width: 300px;
+}
+
+
+.shrink-width .box{
+    width: 150px;
+}
+
+.sh-1{
+    flex-shrink: 3;
+}
+
+.sh-2 {
+    flex-shrink: 1;
+}
+.sh-3 {
+    flex-shrink: 2;
+}
+
+.sh-4{
+    flex-shrink: 0;
+}
+.sh-5{
+    flex-shrink: 4;
+}
+
+.basis{
+    width: 300px;
+}
+
+.box.zero{
+    flex-basis: 0;
+}
+
+.box.auto {
+    flex-basis: auto;
+}
+
+.box.pixel{
+    flex-basis: 200px;
+}
+
+.box.per{
+    flex-basis: 33.333%;
+}
+
+.item1 {
+
+    order: -1;
+}
+.item2{
+    order: 1;
+    
+}
+.item3 {
+    order:0;
+}
+.item4 {
+    order: 2;
+}
+.item5 {
+    order: -2;
+}
+
+.box.size{
+    width: 50px;
+    height: 50px;
+}
+
+.box.width{
+    width: 50px;
+}
+
+.stretch{
+    align-items: stretch;
+    height: 200px;
+}
+
+.center{
+    align-self: center;
+}
+
+/* 
+the item with hiher shrink rate shrinks faster and lower shrink rate shrink slowers
+
+the difference between when a flex basis is defined, the width is ignored. 
+*/
