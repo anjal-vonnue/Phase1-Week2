@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 10px 0px 10px;
+}
+
+main {
+  margin: 50px;
+}
+.grid-1 {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+}
+
+.container div {
+  background-color: red;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  grid-template-rows: 100px 100px;
+  column-gap: 10px;
+  row-gap: 1px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 100px;
+  row-gap: 10px;
+  column-gap: 1px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: auto auto 50px;
+  grid-template-rows: 100px 100px;
+  gap: 1px;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 90fr;
+  grid-template-rows: 50px 50px 50px;
+  gap: 1px;
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  grid-template-rows: 50px 50px 50px;
+  gap: 1px;
+}
+
+.grid-7 {
+  display: grid;
+  grid-template-columns: repeat(auto-full, minmax(200px, 1fr));
+  grid-template-rows: repeat(6, 50px);
+  gap: 1px;
+}
+
+.grid-8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 2px;
+}
