@@ -8,14 +8,14 @@
   background-image: linear-gradient(
     to bottom,
     blue,
-    rgb(139, 83, 0),
+    rgb(139 83 0),
     blue,
-    rgb(139, 83, 0),
+    rgb(139 83 0),
     var(--color-bg)
   );
   position: absolute;
   inset: 0;
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 /* ===== ABOUT PAGE ===== */
@@ -31,7 +31,7 @@ dl {
 
 dl > dd {
   padding: 10px;
-  border: 1px dashed black;
+  border: 1px dashed var(--black);
   text-align: center;
 }
 
@@ -48,6 +48,7 @@ dl > dt {
   justify-content: center;
   align-items: center;
 }
+
 .qutoe blockquote {
   font-size: 1.5rem;
   text-align: center;
@@ -70,6 +71,9 @@ dl > dt {
 }
 
 /* ===== TEAM PAGE ===== */
+div > p {
+  margin-top: 10px;
+}
 
 .team-main {
   padding: var(--padding);
@@ -139,7 +143,7 @@ figcaption {
 }
 
 figure:hover {
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 3px 10px var(--black);
   transition: box-shadow 1s ease;
 }
 
@@ -152,13 +156,10 @@ figure:hover .visible {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 100;
   }
-}
-
-div > p {
-  margin-top: 10px;
 }
 
 .second-nav {
@@ -205,7 +206,7 @@ a {
   padding: var(--padding);
   height: 20px;
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid;
   border-radius: 10px;
   background-color: var(--color-success);
   color: white;
@@ -228,7 +229,7 @@ a {
 
 .input-field {
   padding: var(--padding);
-  border: 3px solid black;
+  border: 3px solid var(--black);
   transition: all 0.15s;
   outline: none;
   width: 100%;
@@ -243,7 +244,7 @@ a {
   top: 50%;
   left: 40px;
   transform: translateY(-50%);
-  color: rgb(29, 27, 27);
+  color: rgb(29 27 27);
   transition: all 0.3s;
 }
 
@@ -252,7 +253,7 @@ a {
   top: 20px;
   left: 25px;
   font-size: 15px;
-  background-color: rgb(255, 251, 251);
+  background-color: rgb(255 251 251);
   padding: 0 5px;
 }
 
@@ -267,9 +268,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-error);
   height: 30px;
+  background-color: rgb(211 195 108);
   padding: var(--padding);
+}
+
+.form-button:hover {
+  background-color: var(--color-error);
 }
 
 .check-container {
@@ -300,7 +305,7 @@ a {
 
 .contact-address iframe {
   border-radius: 15px;
-  border: 2px solid black;
+  border: 2px solid var(--black);
 }
 
 .contact-address address {
@@ -315,6 +320,7 @@ a {
 .success-msg {
   display: none;
 }
+
 .error-msg {
   display: none;
 }
@@ -323,7 +329,14 @@ a {
   display: block;
   color: var(--color-success);
 }
+
 .input-field:user-invalid ~ .error-msg {
   display: block;
   color: var(--color-warning);
+}
+
+@media screen and (width <= 480px) {
+  .contact-address iframe {
+    width: 300px;
+  }
 }

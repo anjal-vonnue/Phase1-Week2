@@ -50,7 +50,7 @@ nav > a {
 }
 
 body > footer {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--black);
   padding: var(--padding);
   display: flex;
   justify-content: space-between;
@@ -67,6 +67,7 @@ footer .icons {
   .features-section {
     grid-template-columns: 1fr;
   }
+
   .testimonials-section {
     flex-direction: column;
   }
@@ -74,7 +75,4 @@ footer .icons {
   nav {
     flex-direction: column;
   }
-}
-
-@media screen and (width <= 768px) {
 }

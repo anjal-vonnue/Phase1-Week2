@@ -7,36 +7,35 @@
 }
 
 :root {
-  --color-primary: blue;
-  --color-primary-hex: #0000ff;
-  --color-primary-rgb: rgb(0, 0, 255);
-  --color-primary-hsl: hsl(240, 100%, 50%);
-  --color-primary-oklch: oklch(45.203% 0.3133 264.073);
-  --color-secondary: rgb(206, 7, 233);
-  --color-accent: darkcyan;
+  --color-primary: #4747ff;
+  --color-primary-hex: #00f;
+  --color-primary-rgb: oklch(45.203% 0.3133 264.073deg);
+  --color-primary-hsl: hsl(240deg 100% 50%);
+  --color-primary-oklch: oklch(45.203% 0.3133 264.073deg);
+  --color-secondary: rgb(206 7 233);
+  --color-accent: #008b8b;
   --color-success: green;
   --color-warning: red;
   --color-error: orange;
-  --color-text: black;
-  --color-bg: rgb(26, 255, 255);
-
+  --color-text: #666;
+  --color-bg: #1affff;
   --color-primary-tint-900: #1919ff;
   --colot-primary-tint-700: #3232ff;
   --color-prmary-tint-500: #4c4cff;
-  --color-primary-tint-300: #6666ff;
+  --color-primary-tint-300: #66f;
   --color-primary-tint-100: #7f7fff;
-
-  --color-primary-shade-900: #000066;
+  --color-primary-shade-900: #006;
   --color-primary-shade-700: #00007f;
-  --color-primary-shade-500: #000099;
+  --color-primary-shade-500: #009;
   --color-primary-shade-300: #0000b2;
-  --color-primary-shade-100: #0000cc;
+  --color-primary-shade-100: #00c;
   --gap: 10px;
   --padding: 20px;
+  --black: #666;
 }
 
 [data-theme="dark"] {
-  --color-bg: black;
+  --color-bg: #666;
   --color-primary: white;
 }
 
@@ -45,19 +44,8 @@
   color: var(--color-primary);
 }
 
-h1 {
-  color: var(--color-primary-shade-900);
-  z-index: 50;
-}
-
 nav > a {
   color: var(--color-secondary);
-}
-
-h2 {
-  color: var(--color-primary-shade-300);
-  z-index: 50;
-  padding: var(--padding);
 }
 
 p {
@@ -71,13 +59,18 @@ small {
 h1 {
   font-size: clamp(2.4rem, 5vw + 1rem, 5.6rem);
   text-align: center;
+  color: var(--color-primary-shade-900);
+  z-index: 50;
 }
 
 h2 {
   font-size: clamp(2rem, 4.6vw + 1rem, 5.2rem);
-  padding: var(--padding);
   text-align: center;
+  color: var(--color-primary-shade-300);
+  z-index: 50;
+  padding: var(--padding);
 }
+
 h3 {
   font-size: clamp(1.6rem, 4.2vw + 1rem, 4.8rem);
 }
@@ -92,4 +85,29 @@ h5 {
 
 h6 {
   font-size: clamp(0.4rem, 3vw + 1rem, 3.4rem);
+}
+
+nav a {
+  transition: all 0.5s ease;
+}
+
+nav a:hover {
+  color: var(--black);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 }
