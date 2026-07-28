@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-header: darkblue;
+  --color-border: black;
+  --color-sidebar: cyan;
+  --color-card: crimson;
+  --color-chart: slategrey;
+  --color-panel: gold;
+}
+
+main {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "header header" "sidebar main-area";
+  gap: 2px;
+}
+
+.header {
+  grid-area: header;
+  background-color: var(--color-header);
+  border: 1px solid var(--color-border);
+  justify-content: center;
+  align-content: center;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--color-sidebar);
+  border: 1px solid var(--color-border);
+  justify-content: center;
+  align-content: center;
+}
+.main-area {
+  height: 100vh;
+  grid-area: main-area;
+}
+
+.main-area-grid {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 2px;
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.row1 div {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  justify-content: center;
+  align-content: center;
+}
+
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.row2 {
+  background-color: var(--color-chart);
+  border: 1px solid var(--color-border);
+  justify-content: center;
+  align-content: center;
+}
+.row3 div {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-border);
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (width < 1024px) {
+  .grid-container {
+    grid-template-columns: 60px 1fr;
+  }
+}
+
+@media screen and (width < 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main-area";
+  }
+}

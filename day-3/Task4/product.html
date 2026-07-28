@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Responsive Grid Without Media Queries</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="created a product grid that responds full without any media query"
+    />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <main>
+      <h1>product grid</h1>
+      <div class="grid-container product">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+      </div>
+      <h1>Auto Fit</h1>
+      <div class="grid-fit product">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+      </div>
+      <h1>Auto fill</h1>
+      <div class="grid-fill product">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+      </div>
+
+      <h1>Last item spanning</h1>
+      <div class="grid-container product">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div class="last-item">Item 5</div>
+      </div>
+
+      <h1>Featured</h1>
+      <div class="grid-container product">
+        <div class="f-item">Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+      </div>
+    </main>
+  </body>
+</html>
