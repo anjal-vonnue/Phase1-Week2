@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: antiquewhite;
+  box-shadow: 0px 1px 10px black;
+  z-index: 100;
+}
+
+main {
+  padding: 10px;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: 1px dashed black;
+  padding: 10px;
+  font-size: large;
+  background-color: blanchedalmond;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+time {
+  color: green;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: large;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div a {
+  color: red;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  color: blue;
+  padding: 10px;
+}
+
+.link a {
+  color: blue;
+}
+.link a:hover {
+  color: blue;
+  scale: 1.5;
+}
+
+article:hover {
+  box-shadow: 5px 5px 5px gold;
+}
+
+@media screen and (width < 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+aside {
+  padding-top: 10px;
+}
