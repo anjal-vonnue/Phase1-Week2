@@ -1,0 +1,9 @@
+.features-section > article {
+  padding: var(--padding);
+  border: 1px dashed black;
+}
+
+.testimonials-section > blockquote {
+  padding: var(--padding);
+  border: 1px dashed black;
+}

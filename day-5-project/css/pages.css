@@ -1,0 +1,17 @@
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  background-image: linear-gradient(
+    to bottom,
+    blue,
+    rgb(139, 83, 0),
+    blue,
+    rgb(139, 83, 0),
+    var(--color-bg)
+  );
+  position: absolute;
+  inset: 0;
+  opacity: 20%;
+}
