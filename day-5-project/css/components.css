@@ -7,3 +7,25 @@
   padding: var(--padding);
   border: 1px dashed black;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: var(--padding);
+  gap: 10px;
+}
+
+.card-container > article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100%;
+  padding: 10px;
+  border: 1px dashed black;
+}
+
+@media screen and (width <= 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
