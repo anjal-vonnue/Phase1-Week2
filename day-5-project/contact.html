@@ -54,65 +54,100 @@
   <body>
     <header>
       <h1>Contact Us</h1>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./services.html">Services</a>
+        <a href="./team.html">Team</a>
+        <a aria-current="page" href="contact.html">Contact Us</a>
+        <a href="./product.html">Prodcut</a>
+      </nav>
     </header>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About Us</a>
-      <a href="./services.html">Services</a>
-      <a href="./team.html">Team</a>
-      <a aria-current="page" href="contact.html">Contact Us</a>
-      <a href="./product.html">Prodcut</a>
-    </nav>
 
     <main>
       <br />
-      <form>
+      <form class="form-container">
         <fieldset>
           <legend>Send Us A Message</legend>
-          <p>
-            <label for="name">Name*: </label>
-            <input id="name" name="name" type="text" required />
-          </p>
-          <p>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input-field"
+              required
+              placeholder=""
+            />
+            <label for="name">Name*:</label>
+            <span class="success-msg">valid</span>
+            <span class="error-msg">please enter a valid input</span>
+          </div>
+          <div class="input-wrapper">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              class="input-field"
+              placeholder=""
+            />
             <label for="email">Email*: </label>
-            <input id="email" name="email" type="email" required />
-          </p>
-          <p>
-            <label for="phone">Phone*: </label>
+          </div>
+          <div class="input-wrapper">
             <input
               id="phone"
               name="phone"
               type="text"
               pattern="[0-9]+"
               required
+              class="input-field"
+              placeholder=""
             />
-          </p>
-          <p>
-            <label for="dept">Department*: </label>
-            <select id="dept" name="dept" required>
+            <label for="phone">Phone*: </label>
+          </div>
+          <div class="input-wrapper">
+            <label for="dept" aria-label="Department"></label>
+            <select
+              id="dept"
+              name="dept"
+              required
+              class="input-field form-select"
+            >
               <option value="">Choose Your Department</option>
               <option value="Software">Software</option>
               <option value="Marketing">Marketing</option>
               <option value="Customer Care">Customer Care</option>
               <option value="DevOps">DevOps</option>
             </select>
-          </p>
-          <p>
+          </div>
+          <div class="input-wrapper">
+            <textarea
+              id="msg"
+              name="msg"
+              required
+              maxlength="500"
+              class="input-field"
+              placeholder=""
+            ></textarea>
             <label for="msg">Message: </label>
-            <br />
-            <textarea id="msg" name="msg" required maxlength="500"></textarea>
-          </p>
-          <p>
+          </div>
+          <div class="check-container">
             <label for="newletter">Subscribe to Newletter? </label>
-            <input id="newletter" name="newletter" type="checkbox" />
-          </p>
+            <input
+              id="newletter"
+              name="newletter"
+              type="checkbox"
+              class="form-check"
+            />
+          </div>
         </fieldset>
-        <br />
-        <button type="submit">Send Message</button>
-        <button type="reset">Reset Form</button>
+        <div class="button-container">
+          <button type="submit" class="form-button">Send Message</button>
+          <button type="reset" class="form-button">Reset Form</button>
+        </div>
       </form>
 
-      <section>
+      <section class="contact-address">
         <h2>Address</h2>
         <p><strong>Google Map Location:</strong></p>
         <iframe
@@ -145,8 +180,15 @@
     </main>
 
     <footer>
-      <hr />
-      <small>2026 WEEK1 PROJECT | ALL RIGHTS ARE RESERVED.</small>
+      <div>
+        <small>2026 WEEK1 PROJECT</small>
+        <small>ALL RIGHTS ARE RESERVED.</small>
+      </div>
+      <div class="icons">
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
     </footer>
   </body>
 </html>
