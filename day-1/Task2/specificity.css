@@ -1,0 +1,73 @@
+/* score: (inline, id, classes, elements)*/
+/* score: (0,0,0,0) */
+*{
+    color: red;
+}
+
+/* score: (0,0,0,2) */
+div p{
+    color: aqua;
+}
+
+/* score: (0,0,0,2) */
+div > p{
+    color: black;
+}
+
+/* score: (0,0,1,1) */
+.container p{
+    color: bisque;
+}
+
+/* score: (0,1,0,0) */
+#paragraph{
+    color: brown;
+}
+
+/* score: (0,0,1,1) */
+div .first-para{
+    color: blue;
+}
+
+/* score: (0,1,0,1) */
+div #paragraph{
+    color: blueviolet;
+}
+
+/* score: (0,2,0,0) */
+#container-id #paragraph{
+    color: burlywood;
+}
+
+/* score: (0,1,1,0) */
+#container-id .first-para{
+    color: cadetblue;
+}
+
+/* score: (0,0,2,0) */
+.container .first-para{
+    color: chartreuse;
+}
+
+/* score: (0,1,1,0) */
+.container #paragraph{
+    color: blue;
+}
+
+/* score: (0,0,1,2) */
+div p:first-child{
+    color: chocolate;
+}
+
+/* score: (0,0,2,1) */
+.container p:first-child{
+    color: cornflowerblue;
+}
+
+/* score: (0,0,1,1) */
+p:nth-child(1){
+    color: darkblue !important;
+}
+
+/* based on the specificity hierarchy !important have the highest rank therfore darkblue will applied */
+/* after dark blue darkcyan will be applied because after !important inline css have highest rank*/

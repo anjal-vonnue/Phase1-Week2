@@ -1,0 +1,122 @@
+#div1{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    border: 5px solid black;
+}
+
+#div2{
+    width: 300px;
+    height: 300px;
+    background-image: url("https://cdn.magicdecor.in/com/2023/10/25162139/Noir-Knight-Ascends-Batman-Wall-Painting-2-1024x1024.jpg");
+    background-size: contain;
+}
+
+#div3{
+    width: 300px;
+    height: 300px;
+    background-image: url("https://t4.ftcdn.net/jpg/03/89/39/09/360_F_389390965_lwqVX10TBdFH2WMBH6GGF8pcNiOhzfnb.jpg");
+    background-size: cover;
+}
+
+#div4{
+    width: 300px;
+    height: 300px;
+    background-image: url("https://i.pinimg.com/736x/0a/19/85/0a1985c684739b55f851ea877a93f35e.jpg");
+    background-size: 110px;
+}
+
+#div5{
+    width: 300px;
+    height: 300px;
+    background-image: url("https://t4.ftcdn.net/jpg/03/89/39/09/360_F_389390965_lwqVX10TBdFH2WMBH6GGF8pcNiOhzfnb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#div6{
+    
+    height: 300px;
+    background-image: url("https://images.reallygooddesigns.com/2024/05/nike-black-and-white-clean-logo.jpg");
+    background-size: 70px;
+    background-repeat: repeat-x;
+}
+
+#div7{
+    width: 300px;
+    height: 300px;
+    background-image: url("https://cdn.dribbble.com/userupload/6508147/file/original-11794da09cf2fda821918b0be52877cf.jpg?format=webp&resize=400x300&vertical=center");
+    background-attachment: fixed;
+}
+
+#div8{
+    width: 300px;
+    height: 300px;
+    background-image:linear-gradient(yellow, blue);
+    border: 5px dashed black;
+}
+
+#div9{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(green,transparent, cyan);
+    border: 5px dotted black;
+}
+
+#div10{
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(yellow, blue);
+    border: 5px double black;
+}
+
+#div11{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: radial-gradient(green, transparent, cyan);
+}
+
+#div12{
+    width: 300px;
+    height: 300px;
+    border: 5px solid;
+    border-radius: 9999px;
+    background-color: red;
+}
+
+#div13{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    border-radius: 10% 30% 50% 100%;
+}
+
+#div14{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+}
+
+#div15{
+    width: 300px;
+    height: 300px;
+    background-color: chartreuse;
+    box-shadow: 10px 10px;
+}
+
+#div16{
+    width: 300px;
+    height: 300px;
+    background-color:gold;
+    box-shadow: inset 10px 10px 10px;
+}
+
+#div17{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+    background-color: tomato;
+    box-shadow: 10px 10px 10px wheat, 20px 20px 20px green, 30px 30px 30px blue;
+}

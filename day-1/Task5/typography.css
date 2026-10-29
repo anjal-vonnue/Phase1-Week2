@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    font-size: 62.5%;
+    font-display: swap;
+}
+
+body{
+font-family: "Roboto", sans-serif;
+}
+
+#heading{
+    font-size: 5rem;
+    font-family: "Instrument Serif", serif;
+    
+}
+
+#para1{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#para2{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#para3{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#para4{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#para5{
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+#para6{
+    font-size: 2.4rem;
+    font-weight: 1000;
+}
+
+#para7{
+    font-size: 3.0rem;
+}
+
+#para8{
+    font-size: 3.6rem;
+}
+
+#para9{
+    font-size: 4.8rem;
+}
+
+#para10{
+    font-size: 6.0rem;
+}
+
+#para11{
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}

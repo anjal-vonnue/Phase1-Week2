@@ -1,0 +1,45 @@
+a:hover{
+    color: green;
+}
+
+a:focus-visible{
+    font-size: larger;
+    color: chocolate;
+}
+
+/* focus works when it is clicked with the mouse and focus-visible works when switching using tab keygen */
+
+ input[type=checkbox]{
+    appearance: none;
+}
+
+.label::before {
+    content: "❌";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: "✅";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+}
+
+ol{
+    counter-reset: heros;
+}
+
+li{
+    counter-increment: heros;
+}
+li::before {
+    content: counter(heros) ". ";
+}
+
+.tooltip:hover::after{
+    background-color: red;
+    position: absolute;
+    content: attr(data-tooltip);
+}

@@ -1,0 +1,74 @@
+#div1{
+    box-sizing: content-box;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 20px solid brown;
+    background-image: linear-gradient(aquamarine, aquamarine), linear-gradient(yellow, yellow);
+    background-clip: content-box, padding-box;
+}
+
+#div2{
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 20px solid black;
+    background-image: linear-gradient(aqua, aqua), linear-gradient(yellow, yellow);
+    background-clip: content-box, padding-box;
+}
+
+#div3{
+    box-sizing: border-box;
+    width: 100px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:cadetblue;
+}
+
+#div4{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: darkcyan;
+}
+
+#div5{
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    background-image: linear-gradient(chocolate, chocolate),linear-gradient(blue,blue);
+    background-clip: content-box, padding-box;
+}
+
+#div6{
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    background-image: linear-gradient(green, green), linear-gradient(deeppink, deeppink);
+    background-clip: content-box, padding-box;
+    margin-top: -30px;
+}
+
+#div7{
+    box-sizing: border-box;
+    width: 600px;
+    height: 100px;
+    padding: 1em;
+    background-color: gold;
+    border: 2px dashed green;
+}
+
+#div8{
+    margin-top: 1rem;
+    box-sizing: border-box;
+    width: 400px;
+    height: 800px;
+    background-color: lightsalmon;
+    border: 30px groove red;
+}
