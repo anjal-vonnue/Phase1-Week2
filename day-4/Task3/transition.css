@@ -1,0 +1,103 @@
+body {
+  margin: 50px;
+}
+
+.linear-ani {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  transition: width 2s;
+  transition-timing-function: linear;
+}
+
+.ease-ani {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  transition: width 2s;
+  transition-timing-function: ease;
+}
+
+.ease-in-ani {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  transition: width 2s;
+  transition-timing-function: ease-in;
+}
+
+.ease-out-ani {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  transition: width 2s;
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out-ani {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  transition: width 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.timing-functions div:hover {
+  width: 300px;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  font-size: larger;
+  font-weight: 900;
+  margin: 0px 50px;
+  transition: transform 0.4s;
+  transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 3);
+}
+.btn:hover {
+  transform: scale(1.15);
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: burlywood;
+  padding: 10px;
+  border: 1px dashed darkblue;
+}
+
+.hide {
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 500ms;
+}
+
+.card-button {
+  width: 100px;
+  height: 30px;
+}
+
+.card:hover .hide {
+  opacity: 100;
+}
+
+.delay-50 {
+  transition-delay: 50ms;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+input {
+  margin-left: 10px;
+  padding: 10px;
+  outline: 10px dodgerblue;
+  transition: outline 100ms ease-in-out;
+}
+
+input:focus {
+  outline: 5px solid darkblue;
+}

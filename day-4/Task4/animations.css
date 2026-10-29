@@ -1,0 +1,91 @@
+body {
+  margin: 30px;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 16px solid black;
+  border-radius: 50%;
+  border-top: 16px solid gold;
+  animation: rotate 1s linear infinite;
+}
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+  animation: shimmer 3s linear infinite;
+  animation-direction: alternate;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.visible {
+  animation: card 3s linear;
+}
+
+.bell-icon {
+  font-size: 100px;
+  color: green;
+}
+.bell-icon:hover {
+  animation: bell 1s linear infinite;
+  animation-direction: alternate;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes shimmer {
+    from {
+      background-position: -1000px 100%;
+    }
+    to {
+      background-position: 1000px 100%;
+    }
+  }
+
+  @keyframes card {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 100;
+    }
+  }
+
+  @keyframes bell {
+    0% {
+      transform: rotate(30deg);
+    }
+
+    50% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
