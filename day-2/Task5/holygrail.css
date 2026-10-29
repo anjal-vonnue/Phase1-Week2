@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 1px solid black;
+  padding: 5px;
+  gap: 5px;
+}
+
+.header,
+.footer {
+  flex: 0 0 50px;
+  border: 1px solid black;
+}
+
+.sidenav,
+.main-content,
+.aside-content {
+  border: 1px solid black;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+}
+
+.content .main-content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.content .sidenav,
+.content .aside-content {
+  flex: 0 0 100px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  .main-item {
+    order: -1;
+  }
+}

@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 180px;
+}
+
+p {
+  display: flex;
+}
+
+p input,
+p select,
+p textarea {
+  flex: 1;
+}
+
+@media screen and (width <= 600px) {
+  p {
+    flex-direction: column;
+  }
+
+  .names {
+    flex-direction: column;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 5px;
+}
+
+.submit {
+  background-color: rgb(160, 150, 97);
+}
+.submit:hover {
+  background-color: gold;
+}
+.reset {
+  background-color: rgb(189, 90, 90);
+}
+.reset:hover {
+  background-color: red;
+}
+
+fieldset {
+  background-color: aliceblue;
+}
+
+input:user-invalid {
+  border: 2px solid red;
+  outline: none;
+}
+
+select:user-invalid {
+  border: 2px solid red;
+  outline: none;
+}
+.error-message {
+  display: none;
+  color: #dc3545;
+  margin-left: 5px;
+}
+
+input:user-invalid ~ .error-message {
+  display: block;
+}
+
+select:user-invalid ~ .error-message {
+  display: block;
+}
+
+input:focus {
+  outline: 2px solid blue;
+}
+
+.names {
+  display: flex;
+  gap: 10px;
+}
+
+.names p {
+  flex: 1;
+}
